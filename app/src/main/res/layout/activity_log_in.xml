@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn">
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:text="log in"
+        android:background="@drawable/login_bt"
+        android:textColor="#fdfffc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_EditText"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:id="@+id/createEmail_button"
+        android:layout_width="220dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/createmail_bt"
+
+        android:text="Create New Account"
+        android:textColor="#fdfffc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <EditText
+        android:id="@+id/email_EditText"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:hint="Email adress or phone number"
+        android:background="@drawable/editext"
+        android:textDirection="ltr"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facebook_TextView"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <EditText
+        android:id="@+id/password_EditText"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_35sdp"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:drawableLeft="@drawable/ic_baseline_https_24"
+        android:background="@drawable/editext"
+        android:hint="Password"
+        android:textDirection="ltr"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_EditText"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/forgotten_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="forgotten password?"
+        android:textColor="#0065FD"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <TextView
+        android:id="@+id/facebook_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+
+        android:text="Facebook"
+
+        android:textColor="#0065FD"
+        android:textSize="@dimen/_30ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.241" />
+</androidx.constraintlayout.widget.ConstraintLayout>
